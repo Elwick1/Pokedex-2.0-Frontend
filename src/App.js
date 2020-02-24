@@ -44,9 +44,6 @@ export default class App extends React.Component {
            New Game
            </li>
            <li>
-             options
-           </li>
-           <li>
              Continue
            </li>
          </ul> )
