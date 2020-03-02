@@ -11,12 +11,19 @@ import './App.css';
 export default class App extends React.Component {
 
   state = {
-    showMore : false
+    showMore : false,
+    spin : false
   }
 
   handleClick = () => {
     this.setState({
       showMore : !this.state.showMore
+    })
+  }
+
+  spin = () => {
+    this.setState({
+      spin : !this.state.spin
     })
   }
 
@@ -36,7 +43,7 @@ export default class App extends React.Component {
       <div className="App">
       <header className="App-header">
        <div className="container">
-         <h1> Welcome to the world of Pokemon!</h1>
+         <h1 onClick={this.spin}> Welcome to the world of Pokemon!</h1>
          <button className="button1" onClick={this.handleClick}> Start </button>
          {this.state.showMore === true ? (
          <ul>

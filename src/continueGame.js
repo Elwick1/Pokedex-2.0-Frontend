@@ -7,8 +7,9 @@ export default class ContinueGame extends React.Component {
         return(
             <div>
                 <h1> Welcome back! </h1>
-                <h2> please log in below with your trainer Id and password </h2>
+                <h2> please log in below with your trainer id and password </h2>
                 
+
             </div>
         )
     }
