@@ -23,7 +23,7 @@ export default class App extends React.Component {
 
   spin = () => {
     this.setState({
-      spin : !this.state.spin
+      spin : true
     })
   }
 
